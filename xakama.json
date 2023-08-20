@@ -1,0 +1,90 @@
+{
+    "consonantFrequencies": {
+        "b": 0.05,
+        "c": 0.07,
+        "d": 0.11,
+        "g": 0.03,
+        "j": 0.03,
+        "k": 0.08,
+        "l": 0.08,
+        "m": 0.08,
+        "n": 0.04,
+        "ng": 0.05,
+        "p": 0.17,
+        "t": 0.16,
+        "x": 0.05
+    },
+    "vowelFrequencies": {
+        "a": 0.15,
+        "aa": 0.075,
+        "ai": 0.035,
+        "au": 0.035,
+        "i": 0.11,
+        "iai": 0.02,
+        "iau": 0.01,
+        "iao": 0.05,
+        "ii": 0.06,
+        "iu": 0.025,
+        "o": 0.11,
+        "oo": 0.055,
+        "u": 0.09,
+        "uau": 0.005,
+        "uou": 0.005,
+        "ua": 0.03,
+        "ui": 0.03,
+        "uo": 0.045,
+        "uu": 0.06
+    },
+    "syllableLengthRules": [
+        0,
+        0.011,
+        0.23,
+        0.44,
+        0.315,
+        0.004
+    ],
+    "phonemeClasses": {
+        "V": ["a", "i", "o", "u", "ai", "au", "iai", "iau", "iao", "iu", "uau", "uou", "ua", "ui", "uo"],
+        "C": ["b", "c", "d", "g", "k", "l", "m", "n", "ng", "p", "t", "x"],
+        "N": ["m", "n", "ng"]
+    },
+    "syllableClasses": {
+        "I": [ "V", "CV" ],
+        "M": [ "CV" ],
+        "F": [ "CV", "CVN" ]
+    },
+    "voicingRules": {
+        "b": "p",
+        "p": "b",
+        "d": "t",
+        "t": "d",
+        "g": "k",
+        "k": "g",
+        "c": "j",
+        "j": "c",
+        "bb": "pp",
+        "pp": "bb",
+        "dd": "tt",
+        "tt": "dd",
+        "gg": "kk",
+        "kk": "gg",
+        "cc": "jj",
+        "jj": "cc"
+    },
+    "wordTypes": {
+        "I": 0.05,
+        "IF": 0.25,
+        "IMF": 0.40,
+        "IMMF": 0.20,
+        "IMMMF": 0.05,
+        "IMMMMF": 0.05
+    },
+    "tuning": {
+        "geminateConsonantChance": 0.05,
+        "geminatableConsonants": [
+            "b", "c", "d", "g", "k", "l", "m", "n", "p", "t"
+        ],
+        "reduplicateChance": 0.15,
+        "reduplicateWithInitialVoicing": false
+    }
+}

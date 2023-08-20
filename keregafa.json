@@ -1,0 +1,101 @@
+{
+    "consonantFrequencies": {
+        "b": 0.058,
+        "c": 0.064,
+        "d": 0.030,
+        "dj": 0.005,
+        "dz": 0.010,
+        "f": 0.025,
+        "g": 0.071,
+        "h": 0.042,
+        "j": 0.073,
+        "k": 0.075,
+        "m": 0.080,
+        "gb": 0.041,
+        "kp": 0.041,
+        "n": 0.040,
+        "ng": 0.024,
+        "p": 0.055,
+        "r": 0.105,
+        "s": 0.035,
+        "t": 0.036,
+        "ts": 0.050,
+        "v": 0.011,
+        "w": 0.015,
+        "z": 0.014
+    },
+    "vowelFrequencies": {
+        "a": 0.336,
+        "e": 0.186,
+        "i": 0.180,
+        "o": 0.112,
+        "u": 0.170,
+        "ia": 0.008,
+        "eu": 0.008
+    },
+    "syllableLengthRules": [
+        0,
+        0.0076,
+        0.2528,
+        0.5165,
+        0.1928,
+        0.0303
+    ],
+    "phonemeClasses": {
+        "V": ["a", "e", "i", "o", "u", "ia", "eu"],
+        "C": ["b", "c", "d", "dj", "dz", "f", "g", "gb", "h", "j", "k", "kp", "p", "r", "s", "t", "ts", "w", "z"],
+        "R": ["r"],
+        "P": ["j"],
+        "W": ["w"],
+        "N": ["m", "n", "ng"]
+    },
+    "voicingRules": {
+        "k": "g",
+        "t": "d",
+        "p": "b",
+        "s": "z",
+        "f": "v",
+        "c": "dj",
+        "ts": "dz",
+        "g": "k",
+        "d": "t",
+        "b": "p",
+        "z": "s",
+        "v": "f",
+        "dj": "c",
+        "dz": "ts"
+    },
+    "syllableClasses": {
+        "I": [ "V", "CV", "NV", "WV", "RV", "PV", "CRV", "CPV", "NCV", "CWV", "NWV" ],
+        "M": [ "CV", "NV", "CRV", "CPV", "NCV", "CWV", "WV", "NWV" ],
+        "F": [ "CV", "CVN", "CVR", "NVN", "NVR", "PVR", "PVN", "WVR", "WVN", "NV", "WV", "RV" ],
+        "V": [ "pa", "gu" ],
+        "A": [ "du" ]
+    },
+    "wordTypes": {
+        "I": 0.011,
+        "IF": 0.13,
+        "IV": 0.051,
+        "IA": 0.05,
+        "IMF": 0.34,
+        "IMV": 0.051,
+        "IMA": 0.052,
+        "IMMF": 0.215,
+        "IMMV": 0.05,
+        "IMMA": 0.05
+    },
+    "replacementRules": {
+        "degeminateAllTheConsonants": {
+            "([bcdghjkmnprstvwz]|ng|ts|dz|dj)(\\1)": "\\1"
+        },
+        "noNasalsSideBySide": {
+            "(mn|nm|mng)": "n"
+        },
+        "noLongVowels": {
+            "([aeiou])(\\1)": "\\1"
+        },
+        "onlyCertainSoundsPrecedeTheFlap": {
+            "([^cbpkgtdaeiou])r": "\\1"
+        }
+    }
+}

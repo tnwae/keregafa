@@ -1,0 +1,30 @@
+Frequency tables: self-explanatory.  Tweak these based on how the words look that you get back.
+
+Phoneme classes:
+    - H: High vowels
+    - L: Low vowels
+    - V: All vowels
+    - S: "Strong" (voiced) consonants
+    - W: "Weak" (voiceless) consonants
+    - R: Liquid consonants (would include the uvular trill as well as the liquids if they were present)
+    - P: Palatalizing consonants (as in the Slavic languages)
+    - N: Nasals
+    - C: All consonants aside from the palatalizing consonants
+    - X: The counterpart of a given consonant, used for consonant "harmony."
+
+Voicing rules: Concordance for converting voiced to voiceless and vice versa
+
+Permissible syllables: strings describing syllable structure.
+
+Lenition table: sound-specific rules for lenition.
+
+Combining rules: rules for combining adjoining syllables.  Presented in the json file in order of precedence (higher = applied sooner)
+    - Nasal velar prohibition: if a nasal velar would occur (ng, mg, nk, mk), the velar is deleted, leaving only the nasal.  (*Angra => Anra "English, Anglo-"; *Xong-Kong => Xon-Kon "Hong Kong")
+    - Devoicing rule: successive syllables with voiced/voiceless consonants must alternate in voicing. (*papa => paba or bapa)
+    - Palatalization rule: Nasal consonants always palatalize low vowels.
+        (*ma => mja; *me => mje; *mo => mjo; *na => nja; *ne => nje; *no => njo)
+    - Degemination: The same consonant may not occur twice in succession.
+        - Degemination with elision: A vowel is added between the geminate consonants.
+        - Degemination with elimination: The geminate consonants may be collapsed into one.
+    - Lenition: When appearing between two vowels, consonants change to become more sonorous, in accordance with the lenition table.
+    - Vowel contraction: The same vowel may not occur twice in succession.

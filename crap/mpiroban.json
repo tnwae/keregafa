@@ -1,0 +1,87 @@
+{
+    "consonantFrequencies": {
+        "b": 0.075,
+        "d": 0.0475,
+        "dh": 0.051,
+        "f": 0.0575,
+        "g": 0.08,
+        "h": 0.065,
+        "j": 0.05,
+        "k": 0.075,
+        "l": 0.055,
+        "m": 0.025,
+        "n": 0.02,
+        "ng": 0.045,
+        "p": 0.0725,
+        "t": 0.055,
+        "tl": 0.0525,
+        "th": 0.049,
+        "v": 0.065,
+        "w": 0.06
+    },
+    "vowelFrequencies": {
+        "a": 0.170,
+        "e": 0.160,
+        "i": 0.150,
+        "o": 0.260,
+        "u": 0.130,
+        "y": 0.130
+    },
+    "syllableLengthRules": [
+        0,
+        0.011,
+        0.23,
+        0.44,
+        0.315,
+        0.004
+    ],
+    "phonemeClasses": {
+        "V": ["a", "e", "i", "o", "u", "y"],
+        "C": ["b", "d", "dh", "f", "g", "h", "k", "l", "m", "n", "ng", "p", "t", "tl", "th", "v"],
+        "D": ["j", "r", "w"]
+    },
+    "syllableClasses": {
+        "I": [ "V", "CV", "CDV" ],
+        "M": [ "CV", "CDV" ],
+        "F": [ "CV", "CDV" ]
+    },
+    "voicingPairs": {
+        "b": "p",
+        "p": "b",
+        "d": "t",
+        "t": "d",
+        "dh": "th",
+        "th": "dh",
+        "f": "v",
+        "v": "f",
+        "g": "k",
+        "k": "g",
+        "l": "tl",
+        "tl": "l"
+    },
+    "harmonyRules": {
+        "vowelClasses": {
+            "unround": [ "a", "e", "i" ],
+            "round": [ "o", "u", "y" ]
+        },
+        "counterparts": {
+            "round": {
+                "e": "o",
+                "i": "y",
+                "a": "u"
+            },
+            "unround": {
+                "u": "a",
+                "o": "e",
+                "y": "i"
+            }
+        }
+    },
+    "wordTypes": {
+        "I": 0.05,
+        "IF": 0.25,
+        "IMF": 0.40,
+        "IMMF": 0.25,
+        "IMMMF": 0.05
+    }
+}

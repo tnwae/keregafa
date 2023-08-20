@@ -1,0 +1,212 @@
+{
+    "declensionTable": {
+        "nominative": "@",
+        "accusative": "mu",
+        "dative": "to",
+        "genitive": "pe",
+        "comitative": "ki",
+        "privative": "de",
+        "associative": "me",
+        "instrumental": "mbi",
+        "substitutive": "ria",
+        "reflexive": "gia",
+        "pertinative": "sa",
+        "benefactive": "tem",
+        "causative": "du",
+        "partitive": "dje",
+        "distributive": "mane",
+        "ablative": "mun",
+        "allative": "fu",
+        "adessive": "mia",
+        "lative": "ha",
+        "superessive": "ci",
+        "subessive": "wi",
+        "intrative": "ka",
+        "initiative": "nada",
+        "terminative": "nico",
+        "translative": "wo",
+        "orientative": "ma",
+        "revertive": "ta",
+        "semblative": "dia"
+    },
+    "declensionInflectionRules": {
+        "N": {
+            "N": "deleteLastChar",
+            "C": "appendLastVowel",
+            "V": "doNothing"
+        },
+        "V": {
+            "N": "doNothing",
+            "C": "doNothing",
+            "V": "appendLastConsonant"
+        },
+        "C": {
+            "N": "appendLastVowel",
+            "C": "appendLastVowel",
+            "V": "doNothing"
+        }
+    },
+    "conjugationTable": {
+        "gu": {
+            "past perfect": "goja",
+            "past": "go",
+            "past progressive": "gone",
+            "present": "gi",
+            "present progressive": "gine",
+            "future perfect": "geja",
+            "future": "ge",
+            "future progressive": "gene",
+            "gerund": "ga",
+            "participle": "gadu",
+            "infinitive": "gu"
+        },
+        "pa": {
+            "past perfect": "poja",
+            "past": "po",
+            "past progressive": "pone",
+            "present": "pu",
+            "present progressive": "pune",
+            "future perfect": "peja",
+            "future": "pe",
+            "future progressive": "pene",
+            "gerund": "pi",
+            "participle": "pidu",
+            "infinitive": "pa"
+        },
+        "cu": {
+            "past perfect": "coja",
+            "past": "co",
+            "past progressive": "cone",
+            "present": "ci",
+            "present progressive": "cine",
+            "future perfect": "ceja",
+            "future": "ce",
+            "future progressive": "cene",
+            "gerund": "ca",
+            "participle": "cadu",
+            "infinitive": "cu"            
+        },
+        "du": {
+            "past perfect": "doja",
+            "past": "do",
+            "past progressive": "done",
+            "present": "di",
+            "present progressive": "dine",
+            "future perfect": "deja",
+            "future": "de",
+            "future progressive": "dene",
+            "gerund": "da",
+            "infinitive": "du"            
+        }
+    },
+    "verbPrefixTable": {
+        "realis": {
+            "prefix": "@",
+            "elide": "@"
+        },
+        "admirative": {
+            "prefix": "juc",
+            "elide": "i"
+        },
+        "aversive": {
+            "prefix": "muru",
+            "elide": "g"
+        },
+        "causative": {
+            "prefix": "mupd",
+            "elide": "u"
+        },
+        "cognitive": {
+            "prefix": "hoc",
+            "elide": "e"
+        },
+        "conative": {
+            "prefix": "kufi",
+            "elide": "r"
+        },
+        "conclusive": {
+            "prefix": "ake",
+            "elide": "m"
+        },
+        "diversative": {
+            "prefix": "muba",
+            "elide": "f"
+        },
+        "dubitative": {
+            "prefix": "etu",
+            "elide": "d"
+        },
+        "hypothetical": {
+            "prefix": "coda",
+            "elide": "m"
+        },
+        "inchoative": {
+            "prefix": "mad",
+            "elide": "a"
+        },
+        "interrogative": {
+            "prefix": "co",
+            "elide": "d"
+        },
+        "jussive": {
+            "prefix": "ko",
+            "elide": "m"
+        },
+        "necessitative": {
+            "prefix": "jaru",
+            "elide": "m"
+        },
+        "obligative": {
+            "prefix": "mup",
+            "elide": "e"
+        },
+        "optative": {
+            "prefix": "aru",
+            "elide": "b"
+        },
+        "permissive": {
+            "prefix": "hurs",
+            "elide": "a"
+        },
+        "potential": {
+            "prefix": "jac",
+            "elide": "a"
+        },
+        "repetitive": {
+            "prefix": "bami",
+            "elide": "f"
+        },
+        "translative": {
+            "prefix": "jaj",
+            "elide": "e"
+        },
+        "usitative": {
+            "prefix": "duti",
+            "elide": "m"
+        },
+        "volitional": {
+            "prefix": "oro",
+            "elide": "b"
+        }
+    },
+    "converbTable": {
+        "adverbial": "semblative",
+        "associative": "associative",
+        "aversive": "privative",
+        "causative": "causative",
+        "concessive": "dative",
+        "destinative": "allative",
+        "instrumental": "instrumental",
+        "oblique": "accusative",
+        "precessive": "subessive",
+        "prerequisite": "initiative",
+        "semelfactive": "comitative",
+        "simultaneous": "intrative",
+        "successive": "superessive",
+        "supportive": "benefactive",
+        "transitional": "terminative"
+    },
+    "tunings": {
+        "applyConverbToVerbForm": "gerund"
+    }
+}

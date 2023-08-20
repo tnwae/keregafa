@@ -1,0 +1,52 @@
+{
+    "consonantFrequencies": {
+        "b": 0.054,
+        "p": 0.076,
+        "g": 0.082,
+        "k": 0.027,
+        "m": 0.074,
+        "n": 0.136,
+        "ng": 0.139,
+        "r": 0.12,
+        "ts": 0.237,
+        "dz": 0.011,
+        "y": 0.044
+    },
+    "vowelFrequencies": {
+        "a": 0.25,
+        "o": 0.40,
+        "u": 0.35
+    },
+    "syllableLengthRules": [
+        0,
+        0.10,
+        0.29,
+        0.35,
+        0.26
+    ],
+    "phonemeClasses": {
+        "V": ["a", "o", "u"],
+        "C": ["b", "p", "g", "k", "r", "ts", "dz"],
+        "P": ["y"],
+        "N": ["m", "n", "ng"]
+    },
+    "voicingRules": {
+        "g": "k",
+        "k": "g",
+        "b": "p",
+        "p": "b",
+        "dz": "ts",
+        "ts": "dz"
+    },
+    "syllableClasses": {
+        "I": [ "V", "CV" ],
+        "M": [ "CV", "CPV" ],
+        "F": [ "CV", "CVN", "CPVN" ]
+    },
+    "wordTypes": {
+        "I": 0.03,
+        "IF": 0.27,
+        "IMF": 0.50,
+        "IMMF": 0.20
+    }
+}
