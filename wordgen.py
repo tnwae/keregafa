@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
 
-import conlang_utils as cu
-import json
-import numpy as np
 from typing import Union
 import re
+import json
+import random
+import numpy as np
+import conlang_utils as cu
 
 reduplicatep = True
 
@@ -18,12 +19,8 @@ class WordBuilder:
     def run(self, count: int, mode: int, length: int):
         while len(self.results) < count:
             if length == 0:
-                word_length = np.random.choice(
-                    list(
-                        range(
-                            1, len(wb.conlang_data.syllable_count_probabilities
-                                   ))),
-                    p=wb.conlang_data.syllable_count_probabilities[1:])
+                #word_length = random.randint(2, 5)
+                word_length = 1
             else:
                 word_length = length
 

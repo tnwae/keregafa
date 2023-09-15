@@ -16,7 +16,6 @@ class ConlangData:
     voicing_rules = dict()
     word_types = dict()
     syllable_types = dict()
-    syllable_count_probabilities = list()
     replacement_rules = dict()
     harmony_rules = dict()
     sigil_encode_table = dict()
@@ -33,7 +32,6 @@ class ConlangData:
                 self.word_types = raw["wordTypes"]
                 self.syllable_types = raw["syllableClasses"]
                 self.voicing_rules = raw.get("voicingRules", None)
-                self.syllable_count_probabilities = raw["syllableLengthRules"]
                 self.replacement_rules = raw.get("replacementRules", None)
                 self.harmony_rules = raw.get("harmonyRules", None)
                 self.tunings = raw.get("tuning", None)

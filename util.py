@@ -1,9 +1,11 @@
 import json
 
-with open("prefixes.txt", "r") as fh:
-    rules = {}
-    for line in fh.readlines():
-        mood, prefix, elide = line[:-1].split("\t")
-        rules[mood.lower()] = {"prefix": prefix, "elide": elide}
+with open("keregafa_roots.tsv", "r") as fh:
+    roots = {}
+    lines = fh.readlines()
 
-    print(json.dumps(rules))
+    for line in lines:
+        root, meaning = line.split("\t")
+        roots[root] = meaning.replace("\n", "")
+
+    print(json.dumps(roots))
